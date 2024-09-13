@@ -2,21 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Search Results</title>
+    <title>Chat Interface</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Meta tags for SEO -->
-    <meta name="description" content="Search results page">
+    <meta name="description" content="Chat interface page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div class="header">
-        <h1>Search Results</h1>
-    </div>
-    <div class="results-container">
-        <p>You searched for: <strong id="search-query"></strong></p>
+    <!-- Chat Container -->
+    <div class="chat-page-container">
+        <div class="chat-header">
+            <h1>Your App Name Chat</h1>
+        </div>
+        <div class="chat-container" id="chat-container">
+            <!-- Chat messages will be appended here -->
+        </div>
+        <div class="chat-input-container">
+            <form id="chat-form">
+                <input type="text" id="chat-input" placeholder="Type your message..." autocomplete="off" autofocus>
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </div>
 
     <!-- Include the JavaScript -->
-    <script src="results.js"></script>
+    <script src="chat.js"></script>
 </body>
 </html>
