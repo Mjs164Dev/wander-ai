@@ -42,13 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const messageContent = document.createElement('p');
       messageContent.textContent = text;
 
-      // Optional: Add timestamp
-      const timestamp = document.createElement('span');
-      timestamp.classList.add('timestamp');
-      timestamp.textContent = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
-
       messageElement.appendChild(messageContent);
-      messageElement.appendChild(timestamp);
 
       chatContainer.appendChild(messageElement);
       chatContainer.scrollTop = chatContainer.scrollHeight;
@@ -64,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if (userMessage.toLowerCase().includes('help')) {
           responseText = 'Sure, I am here to help. What do you need assistance with?';
       } else {
-          responseText = 'I am sorry, I did not understand that. Could you please rephrase?';
+          responseText = 'I\'m sorry, I didn\'t quite catch that. Could you please rephrase?';
       }
 
       setTimeout(function() {

@@ -2,20 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>wander.ai</title>
+    <title>Your App Name</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Meta tags for SEO -->
     <meta name="description" content="A simple search landing page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body class="landing-page">
     <div class="header">
-        <h1>Explore Winston-Salem through chat</h1>
+        <h1>Ask WSNC anything</h1>
     </div>
     <div class="search-container">
         <form id="search-form">
-            <input type="text" id="search-input" placeholder="Search..." class="search-bar" autofocus>
-            <button type="submit" class="search-button">Wander</button>
+            <div class="search-bar-container">
+                <input type="text" id="search-input" placeholder="Search..." class="search-bar" autofocus>
+                <button type="submit" class="search-button" aria-label="Search">
+                    <span class="arrow-icon">&#x2192;</span>
+                </button>
+            </div>
         </form>
     </div>
 
